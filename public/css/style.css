@@ -9,7 +9,7 @@ body {
   height: 100vh;
   background-color: #fff;
   font-size: 28px;
-  background-image: url("zdj/tlo.jpg");
+  background-image: url("../images/tlo.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .menu_rozwijane.open{
-  height: 240px;
+  height: 320px;
 }
 
 .menu_rozwijane li{
