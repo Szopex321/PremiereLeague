@@ -1,5 +1,5 @@
 {
-  "name": "samochody-na-wynajem-kalkulator",
+  "name": "projekt-cetus-pro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,6 @@
     "body-parser": "^1.20.2",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "fs": "^0.0.1-security",
     "mongoose": "^7.0.0",
     "nodemon": "^2.0.21"
   }
