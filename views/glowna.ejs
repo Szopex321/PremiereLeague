@@ -18,7 +18,14 @@
     </header>-->
     <nav>
       <div class="navbar">
-        <div class="logo"><img id="pilka" src="images/logo.png" alt=""></div>
+        <div>
+          <div class="pelne_logo">
+            <img id="pilka" src="images/logo.png" alt="">
+          </div>
+          <div class="logo">
+            <p>Priemier League</p>
+          </div>
+        </div>
         <ul class="linki">
             <li><a class="nav_anim nav_anim-1" href="#home">Strona Główna</a></li>
             <li><a class="nav_anim nav_anim-1" href="#news">Najbliższe Rozgrywki</a></li>
@@ -28,9 +35,11 @@
             <li><a class="nav_anim nav_anim-1" href="#contact">Ranking Zawodników</a></li>
           </ul>
           <a href="#" class="loguj">Zaloguj się</a>
-          <div class="button"><i class="fa-solid fa-bars"></i></div>
+          <div class="button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
       </div>
-      <div class="menu_rozwijane open">
+      <div class="menu_rozwijane">
         <ul class="linki">
           <li><a class="nav_anim nav_anim-1" href="#home">Strona Główna</a></li>
           <li><a class="nav_anim nav_anim-1" href="#news">Najbliższe Rozgrywki</a></li>
@@ -42,5 +51,22 @@
         </ul>
       </div>
     </nav>
+    <footer>
+      <p class="tekst_w_stopce">Strona Autorstwa Jakuba Stepka, Kamila Szopniewskiego, Michała Zmigrodzkiego oraz Kacpra Wojdyły. Wszelkie Prawa Zastrzeżone ©</p>
+    </footer>
+    <script>
+      const button = document.querySelector('.button')
+      const buttonIcon = document.querySelector('.button i')
+      const menu_rozwijane = document.querySelector('.menu_rozwijane')
+
+      button.onclick = function () {
+        menu_rozwijane.classList.toggle('open')
+        const isOpen = menu_rozwijane.classList.contains('open')
+
+        buttonIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
     </body>
 </html>
