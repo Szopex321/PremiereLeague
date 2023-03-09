@@ -18,6 +18,7 @@ body {
 nav{
   position: relative;
   padding: 0 2rem;
+  background-color: #fff;
 }
 
 li {
@@ -26,7 +27,7 @@ li {
 
 a{
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-size: 1rem;
 }
 
@@ -55,7 +56,7 @@ a:hover {
 }
 
 .navbar .button{
-  color: #fff;
+  color: #000;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -89,7 +90,7 @@ a:hover {
 
 .logo{
   display: none;
-  color: #fff;
+  color: #000;
 }
 
 /*menu rozwijane*/
@@ -146,6 +147,11 @@ a:hover {
 		background:gray;
     text-align: center;
 	}
+
+  /*przesuwanie klubow*/
+  marquee{
+    padding-bottom: 5px;
+  }
 
 /*responsywnosc*/
 @media(max-width: 1060px){
