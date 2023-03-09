@@ -1,24 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>premierlig</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<nav>
-    <img id="pilka" src="Sports-Ball-2683945342.png" alt="">
-    <ul>
-        <li><a href="/">Strona Główna</a></li>
-        <li><a href="/naj_rozgrywki">Najblirzsze Rozgrywki</a></li>
-        <li><a href="/zaklady">Zakłady</a></li>
-        <li><a href="/tabele">Tabele</a></li>
-        <li><a href="/statystyki">Statystyki</a></li>
-        <li><a href="/ranking">Ranking Zawodników</a></li>
-        <li><a href="/sponsorzy">Sponsorzy</a></li>
-        <li><a href="/autorzy">Autorzy</a></li>
+    <!--<header>
+      <h2 class="kluby">Strony Klubów</h2>
+      <ul>
+        <li><img id="kluby" src="zdj/t1.png" alt=""></li>
+      </ul>
+    </header>-->
+    <nav>
+      <div class="navbar">
+        <div>
+          <div class="pelne_logo">
+            <img id="pilka" src="images/logo.png" alt="">
+          </div>
+          <div class="logo">
+            <p>Priemier League</p>
+          </div>
+        </div>
+        <ul class="linki">
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/naj_rozgrywki">Najbliższe Rozgrywki</a></li>
+            <li><a href="/zaklady">Zakłady</a></li>
+            <li><a href="/tabele">Tabele</a></li>
+            <li><a href="/statystyki">Statystyki</a></li>
+            <li><a href="/ranking">Ranking Zawodników</a></li>
+          </ul>
+          <a href="#" class="loguj">Zaloguj się</a>
+          <div class="button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+      </div>
+      <div class="menu_rozwijane">
+        <ul class="linki">
+          <li><a href="/">Strona Główna</a></li>
+          <li><a href="/naj_rozgrywki">Najbliższe Rozgrywki</a></li>
+          <li><a href="/zaklady">Zakłady</a></li>
+          <li><a href="/tabele">Tabele</a></li>
+          <li><a href="/statystyki">Statystyki</a></li>
+          <li><a href="/ranking">Ranking Zawodników</a></li>
+          <li><a href="#" class="loguj">Zaloguj się</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="tresc">
+        <p>tresc strony</p>
+    </div>
+    <footer>
+      <p class="tekst_w_stopce">Strona Autorstwa Jakuba Stepka, Kamila Szopniewskiego, Michała Zmigrodzkiego oraz Kacpra Wojdyły. Wszelkie Prawa Zastrzeżone ©</p>
+    </footer>
+    <script>
+      const button = document.querySelector('.button')
+      const buttonIcon = document.querySelector('.button i')
+      const menu_rozwijane = document.querySelector('.menu_rozwijane')
 
-    </ul>
-</nav>
+      button.onclick = function () {
+        menu_rozwijane.classList.toggle('open')
+        const isOpen = menu_rozwijane.classList.contains('open')
 
+        buttonIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
+    </body>
 </html>
