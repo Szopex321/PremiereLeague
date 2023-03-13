@@ -26,4 +26,7 @@ router.route("/sponsorzy").get((req, res) => {
 router.route("/autorzy").get((req, res) => {
     res.render("autorzy");
 })
+router.route("/logowanie").get((req, res) => {
+    res.render("logowanie");
+})
 module.exports = router

@@ -8,6 +8,6 @@ const statystyki = function (res, req) { res.render("statystyki") }
 const ranking = function (res, req) { res.render("ranking") }
 const sponsorzy = function (res, req) { res.render("sponsorzy") }
 const autorzy = function (res, req) { res.render("autorzy") }
+const logowanie = function (res, req) { res.render("logowanie") }
 
-
-module.exports = { glowna, naj_rozgrywki, zaklady, tabele, statystyki, ranking, sponsorzy, autorzy }
+module.exports = { glowna, naj_rozgrywki, zaklady, tabele, statystyki, ranking, sponsorzy, autorzy, logowanie }

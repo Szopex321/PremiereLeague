@@ -1,33 +1,33 @@
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
   background-color: #fff;
   font-size: 28px;
-  background-image: url("../images/tlo.jpg");
+  background-image: url("../images/premierlaegue.jpg");
   background-size: cover;
   background-position: center;
 }
 
 /*menu poziome*/
-nav{
+nav {
   position: relative;
   padding: 0 2rem;
-  background-color: #fff;
+  background-color: #4B0082;
 }
 
 li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
-  color: #000;
+  color: white;
   font-size: 1rem;
 }
 
@@ -35,7 +35,7 @@ a:hover {
   color: red;
 }
 
-.navbar{
+.navbar {
   width: 100%;
   height: 60px;
   max-width: 1200px;
@@ -45,24 +45,24 @@ a:hover {
   justify-content: space-between;
 }
 
-.navbar .logo{
+.navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar .linki{
+.navbar .linki {
   display: flex;
   gap: 2rem;
 }
 
-.navbar .button{
+.navbar .button {
   color: #000;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
 
-.loguj{
+.loguj {
   background-color: red;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -75,26 +75,26 @@ a:hover {
   transition: scale 0.2 ease;
 }
 
-.loguj:hover{
+.loguj:hover {
   scale: 1.05;
   color: #fff;
 }
 
-.loguj:active{
+.loguj:active {
   scale: 0.95;
 }
 
-#pilka{
-    width: 10rem;
+#pilka {
+  width: 10rem;
 }
 
-.logo{
+.logo {
   display: none;
   color: #000;
 }
 
 /*menu rozwijane*/
-.menu_rozwijane{
+.menu_rozwijane {
   display: none;
   position: absolute;
   right: 2rem;
@@ -108,18 +108,18 @@ a:hover {
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.menu_rozwijane.open{
+.menu_rozwijane.open {
   height: 320px;
 }
 
-.menu_rozwijane li{
+.menu_rozwijane li {
   padding: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.menu_rozwijane .loguj{
+.menu_rozwijane .loguj {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -128,71 +128,96 @@ a:hover {
 /*stopka*/
 
 #container {
-		min-height:100%;
-		position:relative;
-	}
-	#header {
-		background:#fbb5b8;
-		padding:10px;
-	}
-	#middle {
-		padding:10px;
-		padding-bottom:60px;	/* Wysokość nagłówka */
-	}
-	footer {
-		position:absolute;
-		bottom:0;
-		width:100%;
-		height:60px;		/* Wysokość nagłówka */
-		background:gray;
-    text-align: center;
-	}
-
-  /*przesuwanie klubow*/
-  marquee{
-    padding-bottom: 5px;
-  }
-
-/*responsywnosc*/
-@media(max-width: 1060px){
-  .navbar .linki,
-  .navbar .loguj{
-    display: none;
-  }
-
-  .navbar .button{
-    display: block;
-  }
-
-  .menu_rozwijane{
-    display: block;
-  }
-
-  .pelne_logo{
-    display: none;
-  }
-
-  .logo{
-    display: block;
-  }
-
-  .tekst_w_stopce{
-    font-size: 20px;
-  }
+  min-height: 100%;
+  position: relative;
 }
 
-@media(max-width: 576px){
-  .menu_rozwijane{
+#header {
+  background: #fbb5b8;
+  padding: 10px;
+}
+
+#middle {
+  padding: 10px;
+  padding-bottom: 60px;
+  /* Wysokość nagłówka */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  /* Wysokość nagłówka */
+
+}
+
+/*przesuwanie klubow*/
+marquee {
+  padding-bottom: 5px;
+}
+
+/*responsywnosc*/
+@media(max-width: 1060px) {
+
+  .navbar .linki,
+  .navbar .loguj {
+    display: none;
+  }
+
+  .navbar .button {
+    display: block;
+  }
+
+  .menu_rozwijane {
+    display: block;
+  }
+
+  .pelne_logo {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+
+}
+
+@media(max-width: 576px) {
+  .menu_rozwijane {
     left: 2rem;
     width: unset;
   }
 
-  .pelne_logo{
+  .pelne_logo {
     display: none;
   }
 
-  .logo{
+  .logo {
     display: block;
   }
-  
+
+}
+
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.zawartosc {
+  width: 100%;
+}
+
+.pelne_logo {
+  color: white;
+  font-weight: bold;
 }
