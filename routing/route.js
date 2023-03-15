@@ -29,4 +29,7 @@ router.route("/autorzy").get((req, res) => {
 router.route("/logowanie").get((req, res) => {
     res.render("logowanie");
 })
+router.route("/rejestracja").get((req, res) => {
+    res.render("zarejestruj")
+})
 module.exports = router
