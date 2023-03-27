@@ -101,6 +101,7 @@ a:hover {
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
 }
 
 .menu_rozwijane.open {
@@ -123,6 +124,7 @@ a:hover {
 /*przesuwanie klubow*/
 .kluby {
     background-color: #4B0082;
+    z-index: 1;
 }
 
 
@@ -344,7 +346,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-    max-width: 1068px;
+    max-width: 100%;
     margin: 10px 0px;
     width: 100%;
 }
@@ -361,6 +363,7 @@ header {
 #cart-icon {
     font-size: 1.8rem;
     cursor: pointer;
+    float: left;
 
 }
 
@@ -430,7 +433,7 @@ header {
     cursor: pointer;
 }
 
-section {
+#section {
     padding: 4rem 0 3rem;
 }
 
@@ -492,11 +495,7 @@ section {
     gap: 1.5rem;
 }
 
-.products-box {
-    position: relative;
-
-
-}
+.products-box {}
 
 .products-box:hover {
     padding: 10px;
@@ -524,13 +523,14 @@ section {
 }
 
 .add-cart {
-    position: absolute;
+    float: right;
     bottom: 0;
     right: 0;
     background: var(--text-color);
     color: var(--bg-color);
     padding: 10px;
     cursor: pointer;
+
 }
 
 .add-cart:hover {

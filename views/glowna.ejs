@@ -17,48 +17,28 @@
 
 <body>
   <%- include ('partials/baner.ejs') %>
-    <div class="zawartosc">
-      <div class="artykuly">
-        <div class="artykul">
-          <div class="slideshow-container">
+    <div class="pelnazawartosc">
+      <div class="zawartosc">
 
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="images/wyroznione/955249480.jpg" style="height: 600px; width: 1000px;">
-              <div class="text">tytul 1</div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="images/wyroznione/tlo.jpg" style="height: 600px; width: 1000px;">
-              <div class="text">tytul 2</div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="images/wyroznione/Premier-League.jpg" style="height: 600px; width: 1000px;">
-              <div class="text">tytul 3</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
+        <div class="blog-post">
+          <div class="blog-post_img">
+            <img src="images/blog/Players of Tottenham Hotspur pose for a team photo prior to the UEFA___.jfif">
           </div>
-          <br>
-
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+          <div class="blog-post_info">
+            <div class="blog-post_date">
+              <span>Sagar developer</span>
+              <span>Nov 12 2021</span>
+            </div>
+            <h1 class="blog-post_title">fhkjeqbfkhqukfqhf</h1>
+            <p class="blog-post_text">
+              Niemiec Julian Nagelsmann i Argentyńczyk Mauricio Pochettino to dwaj główni kandydaci do przejęcia schedy
+              w
+              Tottenhamie Hotspur po Włochu Antiono Conte, z którym angielski klub piłkarski rozstał się w niedzielę. Do
+              końca sezonu drużynę poprowadzi jego asystent - Cristian Stellini.</p>
+            <a href="#" class="blog-post_cta">Read more</a>
           </div>
-          <div class="tresc">
-            <h2 class="tytul_artykulu">tytul</h2>
-            <p class="zawartosc_artykulu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda tenetur
-              illum beatae voluptatem ipsa nulla laudantium reiciendis ad cum quod aliquid totam magni qui maxime nam
-              cumque, obcaecati sapiente eius.</p>
-          </div>
-
         </div>
+
       </div>
     </div>
     <footer class="footer">
@@ -118,33 +98,7 @@
           ? 'fa-solid fa-xmark'
           : 'fa-solid fa-bars'
       }
-      //slider zdjec
-      let slideIndex = 1;
-      showSlides(slideIndex);
 
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
 
     </script>
 </body>

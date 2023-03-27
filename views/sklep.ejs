@@ -47,7 +47,7 @@
             </div>
           </div>
       </header>
-      <section class="shop container">
+      <div id="section" class="shop container">
         <h2 class="section-title">Shop Products</h2>
         <!--content-->
         <div class="shop-content">
@@ -74,7 +74,7 @@
           </div>
 
         </div>
-      </section>
+      </div>
 
     </div>
     <footer class="footer">
@@ -238,7 +238,7 @@
           var cartBox = cartBoxes[i]
           var priceElement = cartBox.getElementsByClassName('cart-price')[0];
           var quanityElement = cartBox.getElementsByClassName('cart-quanity')[0];
-          var price = parseFloat(priceElement.innerHTML.replace("$", ""));
+          var price = parseFloat(priceElement.innerText.replace("$", ""));
           console.log(priceElement)
           var quanity = quanityElement.value;
           total = total + (price * quanity);
