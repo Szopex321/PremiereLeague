@@ -8,8 +8,8 @@ router.route("/").get((req, res) => {
 router.route("/naj_rozgrywki").get((req, res) => {
     res.render("naj_rozgrywki");
 })
-router.route("/zaklady").get((req, res) => {
-    res.render("zaklady");
+router.route("/sklep").get((req, res) => {
+    res.render("sklep");
 })
 router.route("/tabele").get((req, res) => {
     res.render("tabele");
