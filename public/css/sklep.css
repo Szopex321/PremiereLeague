@@ -121,6 +121,15 @@ a:hover {
     justify-content: center;
 }
 
+.menu_rozwijane a {
+    color: #171427;
+}
+
+.menu_rozwijane a:hover {
+    color: #fd4646;
+}
+
+
 /*przesuwanie klubow*/
 .kluby {
     background-color: #4B0082;

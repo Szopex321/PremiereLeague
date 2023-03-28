@@ -3,8 +3,8 @@ const auto = require("../model/baza")
 const glowna = function (res, req) {
     res.render("glowa")
 }
-const naj_rozgrywki = function (res, req) {
-    res.render("naj_rozgrywki")
+const highlist = function (res, req) {
+    res.render("highlist")
 }
 const sklep = function (res, req) {
     res.render("sklep")
@@ -30,5 +30,8 @@ const logowanie = function (res, req) {
 const rejestracja = function (res, req) {
     res.render("zarejestruj")
 }
+const autors = function (res, req) {
+    res.render("autorzy")
+}
 
-module.exports = { glowna, naj_rozgrywki, sklep, tabele, statystyki, ranking, sponsorzy, autorzy, logowanie, rejestracja }
+module.exports = { glowna, highlist, sklep, tabele, statystyki, ranking, sponsorzy, autorzy, logowanie, rejestracja, autors }

@@ -1,0 +1,107 @@
+.user-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.tresc {
+    margin-bottom: 40px;
+}
+
+.user-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.user-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.links {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    s
+}
+
+.links1 {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.links1 h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.links1 h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.links1 ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.links1 ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.links1 ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.links1 .links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.links1 .links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}

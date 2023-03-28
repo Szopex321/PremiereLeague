@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>premierlig</title>
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/highlist.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+  <%- include ('partials/baner.ejs') %>
+    <div class="zawartosc">
+      <div class="title">
+        <div class="video">
+          <h2 data-text="Premier League YouTube">Premier League YouTube</h2>
+        </div>
+      </div>
+
+      <!--box-->
+      <div class="box-container">
+
+
+        <div class="box">
+          <div class="box-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3fZJ2RhjXg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="title">
+              <h3>
+                "He said Arsenal can WIN THE LEAGUE on his FIRST DAY" Gabriel Magalhaes | Uncut
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3fZJ2RhjXg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="title">
+              <h3>
+                "He said Arsenal can WIN THE LEAGUE on his FIRST DAY" Gabriel Magalhaes | Uncut
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3fZJ2RhjXg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="title">
+              <h3>
+                "He said Arsenal can WIN THE LEAGUE on his FIRST DAY" Gabriel Magalhaes | Uncut
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3fZJ2RhjXg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="title">
+              <h3>
+                "He said Arsenal can WIN THE LEAGUE on his FIRST DAY" Gabriel Magalhaes | Uncut
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3fZJ2RhjXg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="title">
+              <h3>
+                "He said Arsenal can WIN THE LEAGUE on his FIRST DAY" Gabriel Magalhaes | Uncut
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3fZJ2RhjXg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="title">
+              <h3>
+                "He said Arsenal can WIN THE LEAGUE on his FIRST DAY" Gabriel Magalhaes | Uncut
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include ('partials/footer.ejs') %>
+      <script>
+        const button = document.querySelector('.button')
+        const buttonIcon = document.querySelector('.button i')
+        const menu_rozwijane = document.querySelector('.menu_rozwijane')
+
+        button.onclick = function () {
+          menu_rozwijane.classList.toggle('open')
+          const isOpen = menu_rozwijane.classList.contains('open')
+
+          buttonIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+      </script>
+</body>
+
+</html>

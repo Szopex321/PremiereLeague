@@ -9,6 +9,7 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>premierlig</title>
+  <link rel="stylesheet" href="css/autorzy.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css"
@@ -18,6 +19,37 @@
 <body>
 
   <%- include ('partials/baner.ejs') %>
+    <div class="tresc">
+      <div class="user-card">
+        <img src="images/autors/kuba.jpg" alt="Profile Picture">
+        <div class="user-details">
+          <h2>Jakub Stepek</h2>
+          <p>Web Developer</p>
+          <p>jakubstepekk@gamil.com</p>
+          <div class="links1">
+            <div class="links">
+              <a href="https://www.facebook.com/jakub.stepek.146"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/_kubuuuss_/"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-card">
+        <img src="images/autors/kamil.jpg" alt="Profile Picture">
+        <div class="user-details">
+          <h2>Kamil Szopniewski</h2>
+          <p>Web Developer</p>
+          <p>email</p>
+          <div class="links1">
+            <div class="links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <%- include ('partials/footer.ejs') %>
       <script>
         const button = document.querySelector('.button')
