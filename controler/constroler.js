@@ -24,8 +24,8 @@ const sponsorzy = function (res, req) {
 const autorzy = function (res, req) {
     res.render("autorzy")
 }
-const logowanie = function (res, req) {
-    res.render("logowanie")
+const logowanie = (req, res) => {
+    UserModel.findOne({ login: req.body })
 }
 const rejestracja = function (res, req) {
     res.render("zarejestruj")

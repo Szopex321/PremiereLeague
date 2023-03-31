@@ -10,56 +10,47 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>premierlig</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/logowanie.css" >
+    <link rel="stylesheet" href="css/logowanie.css">
 </head>
 
 <body>
 
     <%- include ('partials/baner.ejs') %>
-    <div class="logowanie">
-        <form>
-            <h2>
-                Login
-            </h2>
-            <div class="user">
-                <input type="text" name="" required="">
-                <label>Username</label>
-            </div>
-            <div class="user">
-                <input type="text" name="" required="">
-                <label>Password</label>
-            </div>
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Zaloguj Się
-            </a>
-            <a href="/zarejestruj">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                zarejestruj Się
-            </a>
-        </form>
-    </div>
+        <div class="logowanie">
+            <form>
+                <h2>
+                    Login
+                </h2>
+                <div class="user">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user">
+                    <input type="text" name="" required="">
+                    <label>Password</label>
+                </div>
+                <a href="#">
 
-    <script>
-        const button = document.querySelector('.button')
-        const buttonIcon = document.querySelector('.button i')
-        const menu_rozwijane = document.querySelector('.menu_rozwijane')
+                    Zaloguj Się
+                </a>
 
-        button.onclick = function () {
-            menu_rozwijane.classList.toggle('open')
-            const isOpen = menu_rozwijane.classList.contains('open')
+            </form>
+        </div>
 
-            buttonIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script>
+        <script>
+            const button = document.querySelector('.button')
+            const buttonIcon = document.querySelector('.button i')
+            const menu_rozwijane = document.querySelector('.menu_rozwijane')
+
+            button.onclick = function () {
+                menu_rozwijane.classList.toggle('open')
+                const isOpen = menu_rozwijane.classList.contains('open')
+
+                buttonIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
 </body>
 
 </html>
